@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
 mongoose.connect('mongodb+srv://gowthamabi1412:Gowtham2131%40@office.lrtep.mongodb.net/foodapp', {
   useNewUrlParser: true,
   useUnifiedTopology: true,

@@ -4,4 +4,9 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  server: {
+    proxy: {
+      '/search': 'http://localhost:3000',
+    },
+  },
 })
